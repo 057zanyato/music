@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.app-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #181922 70%, #222224 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.grain-overlay {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.13;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+.main-container {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 48px 16px 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(14,15,22,0.91);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 #0008, 0 0 0 1px #22222555;
+  position: relative;
+  z-index: 1;
+  animation: fadeIn 1.2s cubic-bezier(.39,.575,.56,1) both;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(32px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+.minimal-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  letter-spacing: 0.04em;
+  color: #eaeaea;
+  margin-bottom: 36px;
+  margin-top: 10px;
+  text-align: center;
+  text-shadow: 0 2px 24px #15151b4a, 0 0px 24px #f3ecb5a8;
+  filter: brightness(1.15);
+}
+
+.divider {
+  width: 44px;
+  height: 1.5px;
+  background: linear-gradient(90deg, #22222500 0%, #ede6d4aa 50%, #22222500 100%);
+  margin: 32px auto 32px auto;
+  border-radius: 2px;
+  opacity: 0.19;
+}
+
+.visit-counter {
+  margin-bottom: 0px;
+  text-align: center;
+  letter-spacing: 0.09em;
+}
+
+.visit-number {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 3.7rem;
+  color: #fafbff;
+  display: block;
+  line-height: 1;
+  text-shadow: 0 1px 16px #f3ecb555, 0 0 8px #fff2;
+}
+
+.visit-text {
+  font-family: 'Inter', sans-serif;
+  color: #888ca1;
+  font-size: 1.1rem;
+  margin-top: 2px;
+  letter-spacing: 0.10em;
+  display: block;
+}
+
+.players {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.player-frame {
+  width: 100%;
+  border: none;
+  background: #181818;
+  border-radius: 12px;
+  filter: drop-shadow(0 1px 18px #0003);
+}
+
+.author-note {
+  margin-top: 32px;
+  font-size: 0.87rem;
+  color: #60606a;
+  letter-spacing: 0.11em;
+  font-family: 'Inter', sans-serif;
+  text-align: right;
+  width: 100%;
+  opacity: 0.55;
+  user-select: none;
+}
+
+.moon-detail {
+  position: absolute;
+  left: -36px;
+  top: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  opacity: 0.13;
+  background: radial-gradient(circle at 40% 40%, #ede6d4 0%, #ede6d400 70%);
+  filter: blur(2px);
+  z-index: 0;
+}
+
+/* Reveal Block — загадочность и акцент */
+.reveal-block {
+  margin-top: 28px;
+  background: rgba(24, 25, 34, 0.91);
+  border-radius: 18px;
+  padding: 22px 18px 16px 18px;
+  box-shadow: 0 4px 16px #0004;
+  width: 100%;
+  max-width: 350px;
+  text-align: left;
+  transition: box-shadow 0.3s;
+  border: 1px solid #23233633;
+}
+
+.reveal-title {
+  font-family: 'Inter', sans-serif;
+  color: #ede6d4;
+  font-size: 1.01rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  margin-bottom: 10px;
+  opacity: 0.76;
+  text-transform: lowercase;
+  text-align: left;
+}
+
+.reveal-text {
+  color: #babac9;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  opacity: 0.91;
+}
+
+.reveal-text strong {
+  color: #ede6d4;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.reveal-signature {
+  margin-top: 18px;
+  color: #ede6d4;
+  font-size: 1.03rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  opacity: 0.85;
+  text-align: right;
+  letter-spacing: 0.03em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #181922;
+  font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #191926;
+}
+::-webkit-scrollbar-thumb {
+  background: #232337;
+  border-radius: 12px;
+}
